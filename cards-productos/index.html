@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://kit.fontawesome.com/23150b6b10.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                dropShadow: {
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '4xl': [
+            '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
+      }
+          }
+        }
+    }
+      </script>
+    <title>cards</title>
+</head>
+<body>
+    <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+<div class="bg-white">
+  <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+    <!-- <h2 class="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2> -->
+
+    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 relative">
+        <!-- producto 1 -->
+      <div class="group relative rounded-md drop-shadow-4xl">
+        <div class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-t-md bg-white lg:aspect-none group-hover:opacity-75 lg:h-80 relative">
+            <h3 class="text-[#d3d3d3] pl-5">91699</h3>
+            <h2 class="uppercase  text-black text-center">titulo producto</h2>
+          <img src="./tornamesa.png" alt="" class="bg-white h-full w-full object-cover object-center lg:h-[80%] lg:w-full">
+        </div>
+        <div class="flex justify-between absolute w-full bottom-[65px] px-5" >
+            <h2 class="text-[#2380ff]">$156,000 <span class="text-[#2380ff]">cop</span></h2>
+            <a href="#">
+                <img class="w-[25px] h-[25px]" src="./carrito-azul.png" alt="">
+            </a>
+          </div>
+        <div class="flex justify-between p-5 bg-[#d3d3d3] rounded-b-md">
+            <div>
+                <a href="#" class="text-[#818181]">
+                    <i class="fa-regular fa-heart"></i> Guardar
+                </a>
+            </div>
+          <a href="#" class="text-[#818181]">
+            <i class="fa-brands fa-whatsapp"></i> compartir
+          </a>
+        </div>
+      </div>
+
+      <!-- producto 2 -->
+      <div class="group relative rounded-md drop-shadow-4xl">
+        <div class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-t-md bg-white lg:aspect-none group-hover:opacity-75 lg:h-80 relative">
+            <h3 class="text-[#d3d3d3] pl-5">91699</h3>
+            <h2 class="uppercase  text-black text-center">titulo producto</h2>
+          <img src="./tornamesa.png" alt="" class="bg-white h-full w-full object-cover object-center lg:h-[80%] lg:w-full">
+        </div>
+        <div class="flex justify-between absolute w-full bottom-[65px] px-5" >
+            <a href="#" class="text-[#2380ff]">Cotizar</a>
+            <!-- <a href="#">
+                <img class="w-[25px] h-[25px]" src="./carrito-azul.png" alt="">
+            </a> -->
+        </div>
+        <div class="flex justify-between p-5 bg-[#d3d3d3] rounded-b-md">
+            <div>
+                <a href="#" class="text-[#818181]">
+                    <i class="fa-regular fa-heart"></i> Guardar
+                </a>
+            </div>
+          <a href="#" class="text-[#818181]">
+            <i class="fa-brands fa-whatsapp"></i> compartir
+          </a>
+        </div>
+      </div>
+
+      <!-- More products... -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

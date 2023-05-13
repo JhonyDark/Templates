@@ -1,0 +1,54 @@
+:root {
+	--bgcolor: rgb(10, 10, 10);
+	--txtcolor: rgb(250, 250, 250);
+
+	--card-width: 208px;
+	--card-height: 208px;
+
+	--card-border: 1px solid white;
+	--card-border-radius: 50px;
+
+	--card-transition-duration: 500ms;
+
+	--card-bgimg-1: url("https://th.bing.com/th/id/OIP.Q7InqQQE94Sf-Y5aRP7RswAAAA?pid=ImgDet&w=410&h=410&rs=1");
+	--card-bgimg-2: url("https://image.lexica.art/full_jpg/77c08340-e79e-4673-a55e-2497771203d1");
+}
+
+body {
+	margin: 0px;
+	height: 100vh;
+	overflow: hidden;
+
+	background-color: var(--bgcolor);
+	color: var(--txtcolor);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card::before {
+}
+.card::after {
+}
+.card {
+	width: var(--card-width);
+	height: var(--card-height);
+
+	box-sizing: border-box;
+
+	border: var(--card-border);
+	border-radius: var(--card-border-radius);
+
+	background-image: var(--card-bgimg-1);
+	background-size: cover;
+	background-position: 40%, 50%;
+
+	transition-property: transform, background-image;
+	transition-duration: var(--card-transition-duration);
+	transition-timing-function: ease;
+}
+.card:hover {
+	background-image: var(--card-bgimg-2);
+	transform: scale(1.05);
+}
